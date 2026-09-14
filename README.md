@@ -30,7 +30,7 @@ Beebot is a sophisticated autonomous mobile robot system designed for indoor nav
 
 The system is organized into four main components:
 
-### 📡 **SLAM & Localization** (`/slam`)
+### **SLAM & Localization** (`/slam`)
 - **Advanced Localization System (ALS)**: Robust MCL with reliability estimation
 - **Expanded MCL (EMCL)**: MCL with expansion resetting capabilities
 - **Ray Casting Mapping**: Real-time local map generation
@@ -48,7 +48,7 @@ The system is organized into four main components:
 - **Remote Control**: Xbox gamepad teleoperation
 - **Robot Eyes**: Visual feedback system
 
-### ⚙️ **System Integration** (`/system`)
+### **System Integration** (`/system`)
 - **Launch Configuration**: System-wide launch files and configurations
 - **RViz Visualization**: Real-time system monitoring and debugging
 
@@ -218,7 +218,7 @@ sudo apt install mosquitto-clients libmosquitto-dev
 mosquitto_pub -h <broker_ip> -t "beebot/cmd" -m "status" -u <username> -P <password>
 ```
 
-## 🎮 Control Interface
+## Control Interface
 
 ### Xbox Gamepad Controls
 
@@ -243,7 +243,7 @@ The Arduino interface provides:
 - Real-time feedback on robot state
 - Emergency stop functionality
 
-## 🛠️ Development
+## Development
 
 ### Building from Source
 
