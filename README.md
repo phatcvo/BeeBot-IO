@@ -1,4 +1,4 @@
-# 🤖 Beebot - Autonomous Mobile Robot System
+# Beebot - Autonomous Mobile Robot System
 
 <div align="center">
 
@@ -11,11 +11,11 @@
 
 </div>
 
-## 📖 Overview
+## Overview
 
 Beebot is a sophisticated autonomous mobile robot system designed for indoor navigation and autonomous operations. The project integrates advanced robotics algorithms including SLAM (Simultaneous Localization and Mapping), path planning, obstacle avoidance, and intelligent control systems. Built on the Robot Operating System (ROS) framework, Beebot provides a complete solution for autonomous mobile robotics applications.
 
-### 🎯 Key Features
+### Key Features
 
 - **Advanced Localization**: Monte Carlo Localization (MCL) with expansion resetting and advanced likelihood estimation
 - **Intelligent Path Planning**: A* global planning with Dynamic Window Approach (DWA) local planning
@@ -26,7 +26,7 @@ Beebot is a sophisticated autonomous mobile robot system designed for indoor nav
 - **Hardware Integration**: Arduino-based hardware control with LCD feedback
 - **Robust Navigation**: Obstacle avoidance and collision detection
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system is organized into four main components:
 
@@ -37,13 +37,13 @@ The system is organized into four main components:
 - **ICP Matching**: Point cloud alignment and registration
 - **Sensor Fusion**: Multi-sensor data integration
 
-### 🎯 **Motion Planning & Control** (`/motion`)
+### **Motion Planning & Control** (`/motion`)
 - **A* Global Planner**: Optimal path planning with configurable heuristics
 - **DWA Local Planner**: Dynamic window approach for local obstacle avoidance
 - **Waypoint Management**: Automated waypoint navigation system
 - **Navigation Utils**: Common utilities for AMR navigation
 
-### 🎮 **Control Systems** (`/control`)
+### **Control Systems** (`/control`)
 - **Arduino Integration**: Hardware control and feedback
 - **Remote Control**: Xbox gamepad teleoperation
 - **Robot Eyes**: Visual feedback system
@@ -52,7 +52,7 @@ The system is organized into four main components:
 - **Launch Configuration**: System-wide launch files and configurations
 - **RViz Visualization**: Real-time system monitoring and debugging
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ The system is organized into four main components:
    roslaunch remote_control remote_control.launch
    ```
 
-## 🧩 Core Components
+## Core Components
 
 ### Navigation Stack
 
@@ -136,7 +136,7 @@ The system is organized into four main components:
 - **Arduino Interface**: Hardware control and status feedback
 - **RViz**: Real-time visualization and debugging
 
-## 📊 Performance Features
+## Performance Features
 
 ### Advanced Localization (ALS)
 - Sensor measurement class estimation for robust localization
@@ -157,7 +157,7 @@ The system is organized into four main components:
 - Hardware emergency stop functionality
 - Multi-device support (keypad, ultrasonic sensors)
 
-## 🔧 Configuration
+## Configuration
 
 ### System Parameters
 
@@ -181,7 +181,7 @@ Key configuration files are located in:
 
 For MQTT communication setup, see the [MQTT Configuration Guide](#mqtt-communication-setup) below.
 
-## 🌐 MQTT Communication Setup
+## MQTT Communication Setup
 
 ### Raspberry Pi Broker Setup
 
@@ -270,51 +270,6 @@ roslaunch a_star_ros test.launch debug_mode:=true
 roslaunch dwa_planner demo.launch
 ```
 
-## 📝 API Documentation
-
-Detailed API documentation for the DWA planner is available at: [https://amslabtech.github.io/dwa_planner/](https://amslabtech.github.io/dwa_planner/)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Phat C. Vo** - *Project Developer and Maintainer*
-- GitHub: [@phatcvo](https://github.com/phatcvo)
-- Email: phatcvo@todo.todo
-
-## 🙏 Acknowledgments
-
-This project builds upon several open-source robotics libraries and research:
-
-- **Advanced Localization System (ALS)** by Naoki Akai
-- **ROS Navigation Stack** by the ROS community
-- **PCL (Point Cloud Library)** for 3D perception
-- **OpenCV** for computer vision capabilities
-
-### Research Citations
-
-If you use this work in your research, please consider citing:
-
-```bibtex
-@misc{beebot2025,
-  title={Beebot: Autonomous Mobile Robot System},
-  author={Phat C. Vo},
-  year={2025},
-  publisher={GitHub},
-  url={https://github.com/phatcvo/Beebot}
-}
-```
-
----
-
-<div align="center">
-
-**⭐ Star this repository if you find it helpful!**
-
-</div>
